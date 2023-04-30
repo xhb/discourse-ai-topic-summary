@@ -5,6 +5,12 @@ plugins:
   ai_topic_summary_open_ai_token:
     default: ''
     client: false
+  ai_topic_summary_open_ai_uri_base:
+    default: ''
+    client: false
+  ai_topic_summary_open_ai_request_timeout:
+    default: '240'
+    client: false
   ai_topic_summary_open_ai_model:
     client: false
     type: enum

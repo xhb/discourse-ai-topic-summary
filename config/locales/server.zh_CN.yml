@@ -1,4 +1,4 @@
-en:
+zh_CN:
   site_settings:
     ai_topic_summary_enabled: 'Enable AI topic summaries'
     ai_topic_summary_open_ai_token: "Your Open AI token.  You can get one at <a target='_blank' rel='noopener' href='https://platform.openai.com/account/api-keys/'>openai.com</a>"
@@ -20,6 +20,6 @@ en:
     ai_topic_summary_auto_tagging_username: 'EXPERIMENTAL: Username used for auto-adding tags.  System User is used if blank, which will allow the AI to create new tags.  This is rarely desirable as they can be a bit free-form occasionally. This setting can help you block creation of new tags if chosen User does not have privileges to create new tags and will restrict it to existing tags only.  Governed by Trust Level setting min_trust_to_create_tag'
   ai_topic_summary:
     prompt:
-      post: "%{username} said %{raw}\n---\n"
-      summarise: "Please summarise the following text in a maximum of three sentences: '%{full_raw}'"
-      tag: "Given this set of tags %{tags} recommend up to five of them that are most appropriate for this summary?: '%{summary}'.  Strictly respond by only listing the tags, separated by commas."
+      post: "%{username} 说了 %{raw}\n---\n"
+      summarise: "请用3句话来总结这段文字: '%{full_raw}'"
+      tag: "给定这组标签: %{tags}, 选取最能描述这段总结摘要的标签, 最多5个标签: '%{summary}'. 请严格在给定的标签中挑选, 用英文逗号分隔."
